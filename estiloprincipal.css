@@ -1,0 +1,161 @@
+body{
+    background-image: url("images/fondo1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    
+}
+.logos{
+    /*background-color: rgba(8, 255, 169, 0.8);*/
+    display: flex;
+    opacity: 0.9;
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    
+    
+}
+h1{
+    display:flex;
+    justify-content:center;
+    font-size:600%;
+    font-family: "Sofia", sans-serif;
+    font-style: oblique;
+    width:auto;
+   
+    color:rgba(244, 141, 6, 0.858);
+
+    /* background-color: rgba(53, 243, 239, 0.566); */
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(106, 4, 15);
+    color: white;
+    text-align: center;
+
+}
+
+/* .link-html{
+    outline: none;
+  text-decoration: none;
+  display: inline;
+  width: 150px;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  
+}
+.link-css{
+ outline: none;
+  text-decoration:none;
+  display: inline;
+  width: 150px;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  color: black;
+  background-color: white;
+    border-radius: 50%;
+} */
+
+nav {
+    display:flex;
+    flex-direction: row-reverse;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+	background-color: rgb(106, 4, 15);
+	margin-top:0%;
+	position:fixed;
+    width: 100%;
+    height: 6%;
+ 
+}
+
+nav ul {
+    display:flex;
+    flex-direction:row;
+	list-style:none;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+
+nav > ul > li {
+	float:right;
+}
+
+nav ul li a {
+	text-decoration:none;
+    display: flex;
+    flex-direction: row-reverse;
+	color:#fff;
+	display:block;
+	padding:5px 10px;
+    font-size:120%;
+}
+
+nav ul li a:hover {
+	background:rgb(3, 7, 30);
+}
+
+nav > ul > li:hover div {
+	display:table;
+}
+
+/*Submenu*/
+nav ul li div {
+    
+	width:500px;
+	position: absolute;
+	right: 0;
+	background:#ccc;
+	box-sizing:border-box;
+	display:none;
+}
+
+nav ul li div ul{
+	width:50%;
+	display:table-cell;
+	border-right:1px solid rgba(255, 197, 49, 0.5);
+	box-sizing:border-box;
+}
+
+nav ul li div ul:last-child {
+	border:none;
+}
+
+nav ul li div ul .titulo {
+	background:#000;
+	color:#fff;
+}
+
+nav ul li div ul .titulo a {
+	color:#fff;
+	padding:10px 20px;
+}
+
+.titulo.azul {background:#e67e22;}
+
+nav ul li div ul .titulo a:hover {
+	background:none;
+}
+
+nav ul li div ul li a {
+	color:#000;
+}
+
+nav ul li div ul li a:hover {
+	color:#fff;
+}

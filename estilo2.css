@@ -1,0 +1,43 @@
+
+body{
+    background-color: #73462D;
+}
+.titulo{
+    color: #73462D;
+    background-color: #D9CAB8 ;
+    text-align: center;
+    font-family:cursive;
+
+}
+.elementos:hover{
+    background-color: #8FBFB6; 
+}
+h1{
+    font-size:50px;
+}
+#htmlimg{
+    width:10%;
+    height:10%;
+   float:left;
+}
+
+/* Color Theme Swatches in Hex */
+.café-1-hex { color: #8FBFB6; }
+.café-2-hex { color: #D9CAB8; }
+.café-3-hex { color: #BF8654; }
+.café-4-hex { color: #73462D; }
+.café-5-hex { color: #A67A60; }
+
+/* Color Theme Swatches in RGBA */
+.café-1-rgba { color: rgba(143, 191, 182, 1); }
+.café-2-rgba { color: rgba(217, 202, 184, 1); }
+.café-3-rgba { color: rgba(191, 134, 84, 1); }
+.café-4-rgba { color: rgba(115, 70, 45, 1); }
+.café-5-rgba { color: rgba(166, 122, 96, 1); }
+
+/* Color Theme Swatches in HSLA */
+.café-1-hsla { color: hsla(168, 27, 65, 1); }
+.café-2-hsla { color: hsla(32, 30, 78, 1); }
+.café-3-hsla { color: hsla(28, 45, 53, 1); }
+.café-4-hsla { color: hsla(21, 43, 31, 1); }
+.café-5-hsla { color: hsla(22, 28, 51, 1); }

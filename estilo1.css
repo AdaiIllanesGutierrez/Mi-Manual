@@ -1,0 +1,84 @@
+table{
+    width: 100%;
+    font-family: Comic Sans MS;
+    border: 1px solid white;
+}
+table tbody tr:nth-child(odd) {
+	background: rgb(235, 153, 47);
+    color:aliceblue;
+
+}
+table tbody tr:nth-child(even) {
+	background: rgb(246, 223, 188)
+}
+table thead {
+  background: rgb(16, 1, 1);
+  color: #fff;
+  font-size: 18px;
+}
+table tbody tr:nth-child(even):hover {
+	background: rgb(203, 188, 246)
+}
+table tbody tr:nth-child(odd):hover {
+	background: rgb(203, 188, 246)
+    
+}
+body {
+   
+    text-align: center;
+    justify-content:center;
+    font-family: 'Merriweather', serif;
+    background-image: url("images/fondo7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+}
+a {
+    color: rgb(68, 36, 0);
+    font-family: Comic Sans MS;
+    margin: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cabeceraRecursos{
+
+    color: rgb(163, 61, 235);
+    font-family: Comic Sans MS;
+    text-align: center;
+    background-color: coral;
+}
+.cabeceraElementos{
+    display:flex;
+    justify-content:center;
+    font-size:50px;
+    font-family: Comic Sans MS;
+    font-style: oblique;
+    margin-left: 10%;
+    margin-right: 10%;
+   color: rgb(163, 61, 235);
+   border-radius: 80%; 
+   background-color: rgba(246, 206, 255, 0.562);
+
+}
+#volver{
+    display:flex;
+    justify-content:center ;
+    margin-left: 0%;
+    margin-right: 0%;
+    
+    color: aquamarine;
+    width:auto;
+    background-color:black;
+    border-radius: 0%;
+   font-size: 20px;
+    outline: none;
+    text-decoration: none;
+}
+#volver:hover{
+    background-color:aliceblue;
+    color:black;
+}

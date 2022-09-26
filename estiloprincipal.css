@@ -1,5 +1,5 @@
 body{
-    background-image: url("images/fondoof.jpg");
+    background-image: url("images/fondoof2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
@@ -228,3 +228,26 @@ nav ul li div ul li a:hover {
     }
 }
 /*der*/
+.imag{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+}
+#ht{
+width: 350px;
+border-radius:50%;
+}
+#ht:hover{
+    width: 450px;
+    border-radius:50%;
+}
+#cs{
+  
+    width: 350px;
+    border-radius:50%;   
+}
+#cs:hover{
+    width: 450px;
+    border-radius:50%;
+}

@@ -1,12 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilocolores.css">
+    <title>Colores</title>
 </head>
+
 <body>
+    <h1 class="cabecera">COLORES</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" >Inicio</a></li>
+            <li>
+                <a href="#">Servicios</a>
+
+                <div>
+                    <ul>
+                        <li class="titulo"><a href="">HTML</a></li>
+                        <li><a href="recursos.html" >Recursos HTML</a></li>
+                        <li><a href="elementosHTML.html" >Elementos HTML</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="titulo azul"><a href="">CSS</a></li>
+                        <li><a href="recursoscss.html">Recursos CSS</a></li>
+                        <li><a href="elementoscss.html">Elementos CSS</a></li>
+                     </ul>
+                
+                </div>
+
+            </li>
+            <li>
+                <a href="practicacss.html" >Practica CSS</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="rgb">
+        <h1>RGB</h1>
+        <p>Podemos  establecer el valor de  un color mezclando diferentes intensidades de los tres colores primarios.
+            <b> sintaxis: 
+                rgb(red, green, blue) 
+            </b></p>
+        <div class="rgbImagen">
+            <img src="images/rgb.png" width="250px" height="250px">
+        </div>
+    </div>
+    <div class="rgba">
+        <h1>RGBA</h1>
+        <p>Podemos definir la transparencia de un color usando la función rgba, esta función es idéntica a la función rgb, pero con un parámetro adicional denominado opacidad, para especificar la transparencia.
+            <b>
+                Ejm:
+                elemento{ color: rgba(37, 150, 190, 1); }
+            </b>
+        </p>
+    </div>
+    <div class="rgbaImagen">
+        <img src="images/rgba.png" width="250px" height="250px">
+    </div>
+    <div class="hexadecimal">
+        <h1>HEXADECIMAL</h1>
+        <p>
+            Podemos utilizar un número hexadecimal para definir un color. Es una alternativa a la función rgb, es decir permite definir un color como la mezcla de intensidades de los colores primarios
+            <b>Ejm:elemento{ color: #numero-hexadecimal; }</b>
+        </p>
+    </div>
+    <div class="hexaImagen">
+        <img src="images/hexadecimal.jfif" width="250px" height="250px">
+    </div>
+    <div class="hsl">
+        <h1>HSL</h1>
+        <p>En este modelo utilizamos conceptos que son más fáciles de comprender. En CSS para poder trabajar con este modelo tenemos la siguiente opción
+            <b> Ejm:elemento{ color: hsl(h, s, l); }</b>
+        </p>
+    </div>
+    <div class="hslImagen">
+        <img src="images/hsl.png" width="250px" height="250px">
+    </div>
     
+
+    <hr>
+
+    <h1>SELECTORES</h1>
+    <a href="index.html"><img id="casa" src="images/home.png" width="100px" height="100px"></a>
+    <div class="rgb">
+        <h1>SELECTOR UNIVERSAL (*)</h1>
+        <p>Permiten seleccionar elementos del documento a los que queremos aplicar estilos.
+            <b> sintaxis: 
+                *{ declaraciones CSS }
+            </b></p>
+        <!-- <div class="rgbImagen">
+            <img src="images/rgb.png" width="250px" height="250px">
+        </div> -->
+    </div>
+    <div class="rgba">
+        <h1>SELECTORES DE TIPO (p)</h1>
+        <p>Permite seleccionar elementos usando el nombre del elemento.
+
+            <b>
+                nombre_elemento { declaraciones CSS }
+            </b>
+        </p>
+    </div>
+    <!-- <div class="rgbImagen">
+        <img src="images/rgb.png" width="250px" height="250px">
+    </div> -->
+    
+    <div class="rgba">
+        <h1>SELECTOR DE CLASE (.foo)</h1>
+        <p>Permite seleccionar elementos en función de los valores del atributo class de los elementos.  Para que los elementos sean seleccionados, su atributo class debe 
+            incluir un valor  que coincida con el valor del selector.
+            <b>
+                .valor_atributo { declaraciones CSS }
+            </b>
+        </p>
+    </div>
+    <!-- <div class="rgbImagen">
+        <img src="images/rgb.png" width="250px" height="250px">
+    </div> -->
+    <div class="rgba">
+        <h1>SELECTORES DE ID (#foo)</h1>
+        <p>Permite seleccionar un elemento en función del 
+            valor del atributo ID del elemento. Para que el 
+            elemento sea seleccionado, su atributo id debe coincidir
+             exactamente con el valor dado en el selector.
+
+            <b>
+                #valor_atributo { declaraciones CSS }
+            </b>
+        </p>
+    </div>
+    <!-- <div class="rgbImagen">
+        <img src="images/rgb.png" width="250px" height="250px">
+    </div> -->
+    <div class="rgba">
+        <h1>SELECTORES DE ATRIBUTO (a[foo])</h1>
+        <p>Permite seleccionar elementos en función
+             de la presencia o del valor de un determinado atributo. 
+
+            <b> selector[attr] { … } </b>
+            <b>  selector[attr=value] { … }</b>
+            <b>  selector[attr~=value] { … }</b>
+            <b>  selector[attr ^= value] { … }</b>
+            <b>  selector[attr $= value] { … }</b>
+            <b>   selector[attr *= value] { … } </b>
+
+
+        </p>
+    </div>
+    <!-- <div class="rgbImagen">
+        <img src="images/rgb.png" width="250px" height="250px">
+    </div> -->
+    <div class="rgba">
+        <h1>PSEUDO- ELEMENTOS</h1>
+        <p>Seleccionan parte de un elemento en lugar del elemento mismo. 
+            Los pseudo-elementos se añaden a los selectores y permiten añadir estilos a una parte concreta de los elementos seleccionados. Por ejemplo, el pseudo elemento ::first-line selecciona solo 
+            la primera línea del elemento especificado por el selector.
+            <b> Sintaxis: selector::pseudo-elemento { … }
+            </b>
+
+
+        </p>
+    </div>
+    <!-- <div class="rgbImagen">
+        <img src="images/rgb.png" width="250px" height="250px">
+    </div> -->
+    <hr>
+    <h1>LONGITUDES EN CSS</h1>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Unidad </th>
+                    <th>Nombre </th>
+                    <th>Equivalente </th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr>
+                    <td>px</td>
+                    <td>Pixel</td>
+                    <td>0.265 mm</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Unidad </th>
+                    <th>Relativo a</th>
+                   
+                </tr>
+            </thead>
+            <tbody >
+                <tr>
+                    <td>rem</td>
+                    <td>Relativo al tamaño de la letra del elemento root (El elemento html)</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>Relativo a otro valor. Si establecemos el valor de la propiedad font-size, será un porcentaje del font-size del elemento padre.
+                        Si usamos un porcentaje para establecer el valor del elemento width, será un porcentaje del width del elemento padre. 
+                    </td>
+                </tr>
+                <tr>
+                    <td>vw</td>
+                    <td>Relativo al ancho del viewport</td>
+                </tr>
+                <tr>
+                    <td>vh</td>
+                    <td>Relativo al alto del viewport</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="Imagen">
+            <img src="images/unidades.png" width="500px" >
+        </div> 
 </body>
+
 </html>

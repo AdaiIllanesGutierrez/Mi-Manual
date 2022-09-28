@@ -1,34 +1,43 @@
 
 body{
-    background-color: #ffe9c9;
-    font-family:'Courier New', Courier, monospace;
+    /* background-color: #ffe9c9; */
+    font-family: Comic Sans MS;
+    background-image: url(imagenes/fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+    background-color: antiquewhite;
+    font-family: Comic Sans MS;
+    
 }
 p{
     font-size: x-large;
 }
-p b{
-    color: #cc883e;
-}
-h1{
-    color: #5e6464;
-    text-align: center;
-    
-}
+
 .cabecera{
-    margin-top:50px;
-    font-size:40px;
+   
+    display:flex;
+    justify-content:center;
+    margin-top: 5%;
+    font-size:60px;
+    color:#01eded;
 }
+
+
 nav {
     display:flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     top: 0px;
     right: 0px;
     left: 0px;
-	background-color: rgba(230, 168, 164,0.5);
+	/* background-color: rgb(207, 54, 207); */
 	margin-top:0%;
 	position:fixed;
     width: 100%;
-    height: 6%;
+    height: 7%;
     
  
 }
@@ -50,14 +59,19 @@ nav ul li a {
 	text-decoration:none;
     display: flex;
     flex-direction: row-reverse;
-	color:#fff;
+	color:rgb(255, 255, 255);
 	display:block;
-	padding:0px 10px;
-    font-size:120%;
+	padding:0px 20px;
+    font-size:23px;
+   
 }
 
 nav ul li a:hover {
-	background:rgb(3, 7, 30);
+	background:rgba(171, 254, 254, 0.694);
+    border-radius: 5px;
+    font-size:24px;
+   color:blue;
+    
 }
 
 nav > ul > li:hover div {
@@ -67,12 +81,13 @@ nav > ul > li:hover div {
 /*Submenu*/
 nav ul li div {
     
-	width:500px;
+	width:35%;
 	position: absolute;
-	right: 0;
-	background:#D1D1D1;
+	left: 0;
+	background:#d1d1d1a8;
 	box-sizing:border-box;
 	display:none;
+    font-size:12px;
 }
 
 nav ul li div ul{
@@ -87,16 +102,17 @@ nav ul li div ul:last-child {
 }
 
 nav ul li div ul .titulo {
-	background:#57ABA6;
+	background:#b87df8;
 	color:#fff;
+   
 }
 
 nav ul li div ul .titulo a {
 	color:rgb(255, 255, 255);
-	padding:10px 20px;
+	padding:0px 10px;
 }
 
-.titulo.azul {background:#c6b299;}
+.titulo.azul {background:#814cd5;}
 
 nav ul li div ul .titulo a:hover {
 	background:none;
@@ -109,6 +125,24 @@ nav ul li div ul li a {
 nav ul li div ul li a:hover {
 	color:#fff;
 }
+
+p b{
+    color: #ffffff;
+}
+h1{
+    color: #2ef8a0;
+    text-align: center;
+    
+}
+.cuadros{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cuadros:hover{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
 .rgb{
     margin: 0%;
     margin-left: 10%;
@@ -116,7 +150,7 @@ nav ul li div ul li a:hover {
     width: 500px;
     text-align: center;
     border-radius: 5%;
-    background-color: rgb(251, 214, 201);
+    background-color: rgba(122, 244, 255, 0.331);
 }
 .rgbImagen{
     margin-left: 35%;
@@ -124,13 +158,13 @@ nav ul li div ul li a:hover {
     position: absolute;
 }
 .rgba{
-    width: 0%;
-    padding-top: -10px;
-    margin-left: 60%;
+    margin: 0%;
+    margin-left: 10%;
+    margin-top: 5%;
     width: 500px;
     text-align: center;
     border-radius: 5%;
-    background-color: rgb(251, 214, 201);
+    background-color: rgba(122, 244, 255, 0.331);
 }
 .rgbaImagen{
     width:50%;
@@ -143,13 +177,13 @@ nav ul li div ul li a:hover {
     border-radius: 150px;
 }
 .hexadecimal{
-    width: 50%;
-    padding-top: 20px;
+    margin: 0%;
     margin-left: 10%;
+    margin-top: 5%;
     width: 500px;
     text-align: center;
     border-radius: 5%;
-    background-color: rgb(251, 214, 201);
+    background-color: rgba(122, 244, 255, 0.331);
 }
 .hexaImagen
 {
@@ -164,13 +198,13 @@ nav ul li div ul li a:hover {
 
 }
 .hsl{
-    width: 50%;
-    padding-top: 20px;
-    margin-left: 60%;
+    margin: 0%;
+    margin-left: 10%;
+    margin-top: 5%;
     width: 500px;
     text-align: center;
     border-radius: 5%;
-    background-color: rgb(251, 214, 201);
+    background-color: rgba(122, 244, 255, 0.331);
     
 }
 .hslImagen img
@@ -184,29 +218,37 @@ nav ul li div ul li a:hover {
 table{
     width: 100%;
     font-family: Comic Sans MS;
-    border: 1px solid white;
+    border: 2px solid white;
+    font-size:18px;
 }
 table tbody tr:nth-child(odd) {
-	background: #E6A8A4;
+	background: #2b97fa;
     color:aliceblue;
 
 }
 table tbody tr:nth-child(even) {
-	background: #D1D1D1;
+	background: #6664ff;
+    color:white;
 }
 table thead {
-  background: #57ABA6;
+  background: #1600174e;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
 }
 table tbody tr:nth-child(even):hover {
-	background: rgb(203, 188, 246)
+	background:  #c501e2;
 }
 table tbody tr:nth-child(odd):hover {
-	background: rgb(203, 188, 246)
+	background: #c501e2;
     
 }
 .Imagen{
+margin-top:10px;
    margin-left: 30%;
+}
+hr{
+    color: #f800f0;
+height: 0px;
+border:10px dashed;
 }
 

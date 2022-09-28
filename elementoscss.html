@@ -35,19 +35,20 @@
 
             </li>
             <li>
-                <a href="practicacss.html" >Practica CSS</a>
+                <a href="practica.html" >Practica CSS</a>
             </li>
         </ul>
     </nav>
+    <div class="cuadros">
     <div class="rgb">
         <h1>RGB</h1>
         <p>Podemos  establecer el valor de  un color mezclando diferentes intensidades de los tres colores primarios.
             <b> sintaxis: 
                 rgb(red, green, blue) 
             </b></p>
-        <div class="rgbImagen">
+        <!-- <div class="rgbImagen">
             <img src="images/rgb.png" width="250px" height="250px">
-        </div>
+        </div> -->
     </div>
     <div class="rgba">
         <h1>RGBA</h1>
@@ -58,9 +59,9 @@
             </b>
         </p>
     </div>
-    <div class="rgbaImagen">
+    <!-- <div class="rgbaImagen">
         <img src="images/rgba.png" width="250px" height="250px">
-    </div>
+    </div> -->
     <div class="hexadecimal">
         <h1>HEXADECIMAL</h1>
         <p>
@@ -68,23 +69,24 @@
             <b>Ejm:elemento{ color: #numero-hexadecimal; }</b>
         </p>
     </div>
-    <div class="hexaImagen">
+    <!-- <div class="hexaImagen">
         <img src="images/hexadecimal.jfif" width="250px" height="250px">
-    </div>
+    </div> -->
     <div class="hsl">
         <h1>HSL</h1>
         <p>En este modelo utilizamos conceptos que son más fáciles de comprender. En CSS para poder trabajar con este modelo tenemos la siguiente opción
             <b> Ejm:elemento{ color: hsl(h, s, l); }</b>
         </p>
     </div>
-    <div class="hslImagen">
+    <!-- <div class="hslImagen">
         <img src="images/hsl.png" width="250px" height="250px">
+    </div> -->
     </div>
-    
 
     <hr>
 
     <h1>SELECTORES</h1>
+    <div class="cuadros">
     <div class="rgb">
         <h1>SELECTOR UNIVERSAL (*)</h1>
         <p>Permiten seleccionar elementos del documento a los que queremos aplicar estilos.
@@ -140,12 +142,13 @@
         <p>Permite seleccionar elementos en función
              de la presencia o del valor de un determinado atributo. 
 
-            <b> selector[attr] { … } </b>
-            <b>  selector[attr=value] { … }</b>
-            <b>  selector[attr~=value] { … }</b>
-            <b>  selector[attr ^= value] { … }</b>
-            <b>  selector[attr $= value] { … }</b>
-            <b>   selector[attr *= value] { … } </b>
+            <b> selector[attr] { }   </b>
+            <b>  selector[attr=value] {}    </b>
+            <b>  selector[attr~=value] {}   </b>
+           
+<!--            
+            <b>  selector[attr $= value] {} </b>
+            <b>  selector[attr *= value] {} </b> -->
 
 
         </p>
@@ -164,6 +167,7 @@
 
         </p>
     </div>
+</div>
     <!-- <div class="rgbImagen">
         <img src="images/rgb.png" width="250px" height="250px">
     </div> -->
@@ -219,6 +223,57 @@
         <div class="Imagen">
             <img src="images/unidades.png" width="500px" >
         </div> 
+        <hr>
+        <h1>FLEX BOX</h1>
+        <div class="cuadros">
+        <div class="rgba">
+            <h1>flex-start</h1>
+            <p> - No existe distancia entre el lado inicial del eje principal y su elemento adyacente.</p>
+            <p> - No existe distancia entre los elementos contiguos de una línea</p>
+            <p> - Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener </p>
+            <p> todos los elementos, los elementos flexibles se desbordan en dirección del eje principal.</p>
+                
+        </div>
+        <div class="rgba">
+            <h1>flex-end</h1>
+            <p> - No existe distancia entre el lado final del eje principal y su elemento adyacente.</p>
+            <p> - No existe distancia entre los elementos contiguos de una línea.</p>
+            <p> - Si el contenedor flexible es de una sola linea y es demasiado pequeño para contener  </p>
+            <p>  todos los elementos, los elementos flexibles se desbordan en dirección contraria del eje 
+                principal.</p>
+                
+        </div>
+        <div class="rgba">
+            <h1>center</h1>
+            <p> - No existe espacio entre los elementos adyacentes de una línea.</p>
+            <p> - La distancia entre los lados del eje principal y sus elementos adyacentes es la misma.</p>
+            <p> - Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener  </p>
+            <p>  todos los elementos, los elementos flexibles se desbordan por igual en ambas direcciones.</p>
+                
+        </div>
+        <div class="rgba">
+            <h1>space-between</h1>
+            <p> - No existe espacio entre los lados del eje principal y sus elementos adyacentes.</p>
+            <p> - La distancia entre los elementos adyacentes de una linea es la misma.</p>
+            <p> - Si solo existe un elemento flexible en la línea, este se coloca pegado al lado inicial del eje 
+                principal. </p>
+            <p> - Si el contenedor flexible es de una sola línea y es demasiado pequeño para contener todos los 
+                elementos, los elementos flexibles se desbordan en dirección del eje principal.
+    </p>
+                
+        </div>
+        <div class="rgba">
+            <h1>space-around</h1>
+            <p> - La distancia entre elementos adyacentes de una línea es la misma.</p>
+            <p>- La distancia entre los lados del eje principal y sus elementos adyacentes es la mitad de la 
+                distancia que existe entre elementos adyacentes.</p>
+            <p> - Si solo existe un elemento flexible en la línea, este se coloca al medio. </p>
+            <p> - Si el contenedor flexible es demasiado pequeño para contener todos los elementos y es de una 
+                sola linea, los elementos flexibles se desbordan por igual en ambas direcciones.
+    </p>
+                
+        </div>
+    </div>
 </body>
 
 </html>

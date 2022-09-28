@@ -1,0 +1,313 @@
+body{
+   /* background-color: #ffe9c9; */
+   font-family: Comic Sans MS;
+   background-image: url(imagenes/fondo2.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+   background-attachment: fixed;
+   /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+   background-size: cover;
+   color:aliceblue;
+
+
+}
+
+nav {
+    display:flex;
+    flex-direction: row;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+	/* background-color: rgb(207, 54, 207); */
+	margin-top:0%;
+	position:fixed;
+    width: 100%;
+    height: 7%;
+    
+ 
+}
+
+nav ul {
+    display:flex;
+    flex-direction:row;
+	list-style:none;
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+
+nav > ul > li {
+	float:right;
+}
+
+nav ul li a {
+	text-decoration:none;
+    display: flex;
+    flex-direction: row-reverse;
+	color:rgb(255, 255, 255);
+	display:block;
+	padding:0px 20px;
+    font-size:23px;
+   
+}
+
+nav ul li a:hover {
+	background:rgba(171, 254, 254, 0.694);
+    border-radius: 5px;
+    font-size:24px;
+   color:blue;
+    
+}
+
+nav > ul > li:hover div {
+	display:table;
+}
+
+/*Submenu*/
+nav ul li div {
+    
+	width:35%;
+	position: absolute;
+	left: 0;
+	background:#d1d1d1a8;
+	box-sizing:border-box;
+	display:none;
+    font-size:12px;
+}
+
+nav ul li div ul{
+	width:50%;
+	display:table-cell;
+	border-right:1px solid rgba(255, 197, 49, 0.5);
+	box-sizing:border-box;
+}
+
+nav ul li div ul:last-child {
+	border:none;
+}
+
+nav ul li div ul .titulo {
+	background:#b87df8;
+	color:#fff;
+   
+}
+
+nav ul li div ul .titulo a {
+	color:rgb(255, 255, 255);
+	padding:0px 10px;
+}
+
+.titulo.azul {background:#814cd5;}
+
+nav ul li div ul .titulo a:hover {
+	background:none;
+}
+
+nav ul li div ul li a {
+	color:#000;
+}
+
+nav ul li div ul li a:hover {
+	color:#fff;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color:#E6A8A4;
+    font-family:'Courier New', Courier, monospace;
+}
+h2 {
+    text-align: right;
+    color:#77fda8;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#text1 {
+    text-align: center;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#text2 {
+    text-align: center;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#text3 {
+    text-align: center;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#text4 {
+    text-align: center;
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+#text5 {
+    text-align: center;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#text6 {
+    text-align: center;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#text7 {
+    text-align: center;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#text8 {
+    text-align: center;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#text9 {
+    text-align: center;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+#text10 {
+    text-align: center;
+    font-size: 30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+#text11 {
+    text-align: center;
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#text12 {
+    text-align: center;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#text13 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+}
+#text14 {
+    text-align: center;
+    font-size: 25px;
+    font-family:fantasy;
+}
+#text15 {
+    text-align: center;
+    font-size: 30px;
+    font-family:monospace;
+}
+#text16 {
+    text-align: center;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+#text17 {
+    text-align: center;
+    font-size: 20px;
+    font-family:serif;
+}
+#text18 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+}
+#text19 {
+    text-align: center;
+    text-decoration: underline red;
+    font-size: 20px;
+    font-family:cursive;
+}
+#text20 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+    text-decoration: overline;
+}
+#text21 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+    text-decoration: line-through;
+}
+#text22 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+    text-decoration: blink;
+}
+#text23 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+    text-decoration: none;
+}
+#text24 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+    text-decoration: underline overline;
+}
+#text25 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+    text-decoration: underline wavy rgb(208, 0, 255); 
+}
+#text26 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+}
+#text27 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+}
+#text28 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+}
+#text29 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+}
+#text30 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+}
+#text31 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+}
+#text32 {
+    text-align: center;
+    font-size: 20px;
+    font-family:cursive;
+}
+audio{
+    display:flex;
+    flex-direction: row;
+    top: 150px;
+    right: 0px;
+    left: 20px;
+	/* background-color: rgb(207, 54, 207); */
+	margin-top:0%;
+	position:fixed;
+}
+embed{
+    display:flex;
+    flex-direction: row;
+    top: 250px;
+    left: 20px;
+    /* left: 20px; */
+	/* background-color: rgb(207, 54, 207); */
+ border-radius: 15%;
+	position:fixed;
+}
